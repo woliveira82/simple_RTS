@@ -32,5 +32,6 @@ margin_top = 52.0
 margin_right = -15.0
 margin_bottom = -12.0
 text = "Air Unit"
+
 [connection signal="button_up" from="LandUnit" to="." method="_on_LandUnit_button_up"]
 [connection signal="button_up" from="AirUnit" to="." method="_on_AirUnit_button_up"]

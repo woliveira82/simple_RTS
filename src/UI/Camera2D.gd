@@ -8,7 +8,9 @@ func _process(delta):
 		var new_position = position + movement
 		new_position.x = max(512, new_position.x)
 		new_position.x = min(1516, new_position.x)
-		new_position.y = max(512, new_position.y)
-		new_position.y = min(1516, new_position.y)
+		new_position.y = max(300, new_position.y)
+		new_position.y = min(1728, new_position.y)
 		position = new_position
+
+
 

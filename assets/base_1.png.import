@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/airbase.jpg-6100da2e6db51388b16afee742f0ca3b.stex"
+path="res://.import/base_1.png-2cca8ab6387029569ce6873a3de8e65f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/airbase.jpg"
-dest_files=[ "res://.import/airbase.jpg-6100da2e6db51388b16afee742f0ca3b.stex" ]
+source_file="res://assets/base_1.png"
+dest_files=[ "res://.import/base_1.png-2cca8ab6387029569ce6873a3de8e65f.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true
