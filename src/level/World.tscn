@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/grass.jpg" type="Texture" id=1]
 [ext_resource path="res://src/actors/PlayerBase.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/level/World.gd" type="Script" id=3]
 [ext_resource path="res://src/actors/AirUnit.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/actors/LandUnit.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/UI/Camera.tscn" type="PackedScene" id=6]
 
 [sub_resource type="TileSet" id=1]
 0/name = "grass.jpg 0"
@@ -36,3 +37,5 @@ tile_data = PoolIntArray( 0, 0, 0, 16, 0, 0, 1048576, 0, 0, 1048592, 0, 0 )
 
 [node name="CollisionShape2D" parent="TileMap" instance=ExtResource( 2 )]
 position = Vector2( 481, 352 )
+
+[node name="Camera2D" parent="." instance=ExtResource( 6 )]

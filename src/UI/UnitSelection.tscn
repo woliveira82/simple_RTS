@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/UI/UnitSelection.gd" type="Script" id=1]
+
+[node name="Panel" type="Panel"]
+anchor_right = 0.116
+anchor_bottom = 0.148
+margin_right = 0.215996
+margin_bottom = 0.199997
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LandUnit" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 14.0
+margin_top = 14.0
+margin_right = -15.0
+margin_bottom = -50.0
+text = "Land Unit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AirUnit" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 14.0
+margin_top = 52.0
+margin_right = -15.0
+margin_bottom = -12.0
+text = "Air Unit"
+[connection signal="button_up" from="LandUnit" to="." method="_on_LandUnit_button_up"]
+[connection signal="button_up" from="AirUnit" to="." method="_on_AirUnit_button_up"]
