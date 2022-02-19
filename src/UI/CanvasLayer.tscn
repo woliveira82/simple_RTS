@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/base_1.png" type="Texture" id=1]
+[ext_resource path="res://src/UI/Control.gd" type="Script" id=2]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="Control" type="Panel" parent="." groups=["HUD"]]
+visible = false
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -119.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 7.0
+margin_right = 120.0
+margin_bottom = -8.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+anchor_bottom = 1.0
+margin_left = 128.0
+margin_top = 15.0
+margin_right = 520.0
+margin_bottom = -73.0
+text = "Military Base"
+__meta__ = {
+"_edit_use_anchors_": false
+}

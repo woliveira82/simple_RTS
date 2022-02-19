@@ -18,6 +18,10 @@ config/name="RTS"
 run/main_scene="res://src/level/World.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GlobalCanvasLayer="*res://src/UI/CanvasLayer.tscn"
+
 [input]
 
 click={

@@ -11,8 +11,8 @@ func base_selected(military_base):
 
 
 func _show_hud():
-	rect_position.y = lerp(rect_position.y, 184, 1.0)
+	visible = true
 
 
 func _hide_hud():
-	rect_position.y = lerp(rect_position.y, 305, 1.0)
+	visible = false

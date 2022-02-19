@@ -1,44 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://src/UI/Control.gd" type="Script" id=1]
-[ext_resource path="res://assets/base_1.png" type="Texture" id=2]
 [ext_resource path="res://src/UI/Camera2D.gd" type="Script" id=3]
 
 [node name="Camera2D" type="Camera2D"]
 current = true
 script = ExtResource( 3 )
-
-[node name="Control" type="Panel" parent="." groups=["HUD"]]
-margin_left = -512.0
-margin_top = 305.0
-margin_right = 512.0
-margin_bottom = 424.0
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect" type="TextureRect" parent="Control"]
-anchor_right = 0.109
-anchor_bottom = 1.0
-margin_left = 8.0
-margin_top = 7.0
-margin_right = -7.616
-margin_bottom = -17.0
-texture = ExtResource( 2 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = 112.0
-margin_top = 16.0
-margin_right = -8.0
-margin_bottom = -72.0
-text = "Military Base"
-__meta__ = {
-"_edit_use_anchors_": false
-}
